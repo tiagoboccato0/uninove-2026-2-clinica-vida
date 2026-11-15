@@ -8,7 +8,7 @@ aplicação completa entregue na Aula 20. O enunciado completo do case está em
 
 ## Identificação
 
-- Nome completo:
-- RA:
-- Turma: (quarta ou quinta)
-- O que espero aprender:
+- Nome completo: Tiago Boccato Barbosa
+- RA: 1726105234
+- Turma: quinta
+- O que espero aprender: Aprender o básico de desenvolvimento para internet e criar sites simples.
