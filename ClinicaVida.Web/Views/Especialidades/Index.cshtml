@@ -1,0 +1,18 @@
+@model IEnumerable<Especialidade>
+@{
+    ViewData["Title"] = "Especialidades";
+    var contagem = (Dictionary<int, int>)ViewBag.MedicosPorEspecialidade;
+}
+<h2>Especialidades</h2>
+<ul class="lista-especialidades">
+    @foreach (var especialidade in Model)
+    {
+        <li data-especialidade-id="@especialidade.Id" data-medicos="@contagem[especialidade.Id]">
+            <h3>@especialidade.Nome</h3>
+            <p>@especialidade.Descricao</p>
+            <p>@contagem[especialidade.Id] médico(s)</p>
+            <p><a asp-controller="Medicos" asp-action="Index" asp-route-especialidadeId="@especialidade.Id">Ver médicos</a></p>
+            <a asp-action="Details" asp-route-id="@especialidade.Id">Sobre a especialidade</a>
+        </li>
+    }
+</ul>

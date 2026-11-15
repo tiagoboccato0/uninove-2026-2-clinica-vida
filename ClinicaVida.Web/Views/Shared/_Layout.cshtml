@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] — Clínica Vida+</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+</head>
+<body>
+    <header>
+        <h1>Clínica Vida+</h1>
+        <p>Agendamento de consultas em seis especialidades.</p>
+    </header>
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index">A clínica</a></li>
+            <li><a asp-controller="Especialidades" asp-action="Index">Especialidades</a></li>
+            <li><a asp-controller="Medicos" asp-action="Index">Corpo clínico</a></li>
+        </ul>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <p>Rua das Acácias, 120, São Paulo. Telefone: (11) 4002-8922</p>
+    </footer>
+</body>
+</html>

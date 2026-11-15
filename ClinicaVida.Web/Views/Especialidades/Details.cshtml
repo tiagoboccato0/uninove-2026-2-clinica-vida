@@ -1,0 +1,8 @@
+@model Especialidade
+@{
+    ViewData["Title"] = Model.Nome;
+}
+<h2>@Model.Nome</h2>
+<p>@Model.Descricao</p>
+<p><a asp-controller="Medicos" asp-action="Index" asp-route-especialidadeId="@Model.Id">Ver médicos desta especialidade</a></p>
+<p><a asp-action="Index">Voltar às especialidades</a></p>

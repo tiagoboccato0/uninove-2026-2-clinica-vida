@@ -1,0 +1,33 @@
+@model IEnumerable<Medico>
+@{
+    ViewData["Title"] = "Corpo clínico";
+    var especialidades = (List<Especialidade>)ViewBag.Especialidades;
+    int? selecionada = ViewBag.EspecialidadeSelecionada;
+}
+<h2>Corpo clínico</h2>
+<form asp-controller="Medicos" asp-action="Index" method="get">
+    <label for="especialidadeId">Especialidade</label>
+    <select id="especialidadeId" name="especialidadeId">
+        <option value="">Todas as especialidades</option>
+        @foreach (var especialidade in especialidades)
+        {
+            <option value="@especialidade.Id" selected="@(selecionada == especialidade.Id)">@especialidade.Nome</option>
+        }
+    </select>
+    <button type="submit">Filtrar</button>
+</form>
+@if (!Model.Any())
+{
+    <p>Nenhum médico encontrado para esta especialidade.</p>
+}
+else
+{
+    <ul>
+        @foreach (var medico in Model)
+        {
+            <li data-medico-nome="@medico.Nome">
+                <a asp-action="Details" asp-route-id="@medico.Id">@medico.Nome</a>, CRM @medico.Crm
+            </li>
+        }
+    </ul>
+}

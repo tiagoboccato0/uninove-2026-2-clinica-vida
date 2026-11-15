@@ -12,3 +12,13 @@ aplicação completa entregue na Aula 20. O enunciado completo do case está em
 - RA: 1726105234
 - Turma: quinta
 - O que espero aprender: Aprender o básico de desenvolvimento para internet e criar sites simples.
+
+## Atividade IV — C# e LINQ
+
+O projeto está em `ClinicaVida.Web`. Consulte [como executar e testar](docs/execucao-csharp.md).
+
+```sh
+dotnet run --project ClinicaVida.Web --urls http://localhost:5080
+```
+
+Os dados são fictícios e ficam em memória. Esta etapa permite consultar médicos, filtrar por especialidade, abrir detalhes e conferir as contagens.
