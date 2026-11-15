@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-11-15T18:53:25.759Z",
+  "requests": [
+    {
+      "url": "https://josercf.github.io/uninove-2026-2-desenvolvimento-web/aulas-1sem/aulas/aula02.html",
+      "method": "GET",
+      "status": 200,
+      "host": "josercf.github.io",
+      "userAgent": "ClinicaVida-Laboratorio/1.0",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css",
+      "method": "GET",
+      "status": 200,
+      "host": "cdn.jsdelivr.net",
+      "userAgent": "ClinicaVida-Laboratorio/1.0",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css",
+      "method": "GET",
+      "status": 200,
+      "host": "cdn.jsdelivr.net",
+      "userAgent": "ClinicaVida-Laboratorio/1.0",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css",
+      "method": "GET",
+      "status": 200,
+      "host": "cdn.jsdelivr.net",
+      "userAgent": "ClinicaVida-Laboratorio/1.0",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://josercf.github.io/uninove-2026-2-desenvolvimento-web/pagina-que-nao-existe-tiago",
+      "method": "GET",
+      "status": 404,
+      "host": "josercf.github.io",
+      "userAgent": "ClinicaVida-Laboratorio/1.0",
+      "contentType": "text/html; charset=utf-8"
+    }
+  ]
+}
